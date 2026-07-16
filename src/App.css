@@ -1,115 +1,167 @@
-/*Css I have used ai*/ 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .container{
-    width: 700px;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+
+    width:100%;
+
+    background:rgba(255,255,255,0.18);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
 }
 
 h1{
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    text-decoration:underline;
+    text-align:center;
+
+    color:rgb(3, 3, 45);
+
+    margin-bottom:30px;
+
+    font-size:38px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
 }
 
 textarea{
-    width: 100%;
-    height: 100px;
-    padding: 15px;
-    font-size: 16px;
-    border: 2px solid #2575fc;
-    border-radius: 10px;
-    resize: none;
-    outline: none;
+    background:rgba(55, 13, 224, 0.18);
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+button.add-note-btn{
+    width:60%;
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    background-color:rgb(26, 26, 209);
+    color:white;
+}
+button.add-note-btn:hover{
+    background-color:rgb(3, 3, 45);
+}
+button.edit-btn{
+    width:15%;
+    padding:5px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    background-color:rgb(50, 6, 6);
+    color:white;
+}
+button.edit-btn:hover{
+    background-color:rgb(3, 3, 45);
+}
+button.delete-btn{
+    width:15%;
+    padding:5px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    cursor:pointer;
+
+    background-color:rgb(50, 6, 6);
+    color:white;
+}
+button.delete-btn:hover{
+    background-color:rgb(3, 3, 45);
+}
+.note-card {
+   
+    
 }
 
-textarea:focus{
-    border-color: #6a11cb;
+.note-card p {
+    align-items:center;
+    text-align:center;
+    background-color:rgba(145, 154, 201, 0.18);
+    padding:10px;
+    border-radius:10px;
+    color:rgb(3, 3, 45);
+    font-size: 20px;
+    font-weight:bold;
 }
-
-.container button{
-    margin-top: 15px;
-    background: #2575fc;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.container button:hover{
-    background: #1a5fd0;
-}
-
-.notes{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
-}
-
-.note-card{
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-    transition: 0.3s;
-}
-
-.note-card:hover{
-    transform: translateY(-5px);
-}
-
-.note-card p{
-    margin-bottom: 15px;
-    color: #333;
-    white-space: pre-wrap;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
-}
-
-.edit-btn{
-    background: #ffc107;
-    color: black;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.edit-btn:hover{
-    background: #e0a800;
-}
-
-.delete-btn{
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.delete-btn:hover{
-    background: #b52a37;
-}
+    

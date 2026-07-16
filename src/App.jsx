@@ -72,7 +72,7 @@ function App() {
 
       <br />
 
-      <button onClick={addNote}>
+      <button className="add-note-btn" onClick={addNote}>
         {editIndex !== null ? "Update Note" : "Add Note"}
       </button>
 
